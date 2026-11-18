@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Café Nayar</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Café Nayar</h1>
+        <p>Visítanos o envíanos un mensaje</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="galeria.html">Experiencias</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+
+    <main>
+        <h2>Contáctanos</h2>
+        <p><strong>Dirección:</strong> Av. México Norte #240, Col. Centro, Tepic, Nayarit.</p>
+        <p><strong>Horario:</strong> Lunes a Sábado de 7:30 AM a 9:30 PM.</p>
+        <p><strong>Teléfono:</strong> (311) 555-0194</p>
+        <br>
+        <form onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');">
+            <input type="text" placeholder="Tu nombre completo" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <textarea rows="4" placeholder="Escribe aquí tu consulta, pedido especial o reservación..." required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Café Nayar - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
